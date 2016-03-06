@@ -1,0 +1,898 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documentation. PhoenixTeamTheme</title>
+    <meta content="" name="description">
+    <link href="assets/css/style.css" media="all" rel="stylesheet">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.createElement('section');
+        var duration = '100',
+        easing = 'swing';
+    </script>
+    <style>
+        html {background-color: #fff;color: #555;}
+        #documenter_sidebar #documenter_logo {background-image: url("assets/images/logo.png");}
+        a {color: #00C0E1;}
+        hr {border-bottom: 1px solid #fff;border-top: 1px solid #eee;}
+        #documenter_sidebar, #documenter_sidebar ul a {background-color: #f9f9f9;color: #555;}
+        #documenter_sidebar ul a {border-bottom: 1px solid #ddd; color: #555; font-weight: 400;}
+        #documenter_sidebar ul li:first-child a {border-top: 1px solid #ddd; }
+        #documenter_sidebar ul a:hover {background: #eee;color: #00C0E1;}
+        #documenter_sidebar ul a.current {background: #eee;color: #00C0E1;}
+        #documenter_copyright {display: block !important;visibility: visible !important;}
+    </style>
+</head>
+<body>
+    <!-- sidebar -->
+    <div id="documenter_sidebar">
+        <a href="#documenter_cover" id="documenter_logo"></a>
+        <ul id="documenter_nav">
+            <li><a class="current" href="#documenter_cover">Home</a></li>
+            <li><a href="#started">Start</a></li>
+            <li><a href="#installation">Theme Installation</a>
+                <ul>
+                    <li><a href="#installation-admin">via Administration Area</a>
+                    <li><a href="#installation-ftp">via FTP</a></li>
+                    <li><a href="#installation-plugins">Plugins Installation</a></li>
+                </ul>
+            </li>
+            <li><a href="#setup">Theme Setup</a>
+                <ul>
+                    <li><a href="#pages">Adding Pages</a></li>
+                    <li><a href="#menu">Setting Menus</a></li>
+                    <li><a href="#widgetised">Setting Sidebars</a></li>
+                    <li><a href="#post-formats">Posts with Post Formats</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#tst">Team, Services &amp; Testimonials</a></li>
+                    <li><a href="#plugins">Plugins Related Content</a></li>
+                </ul>
+            </li>
+            <li><a href="#theme_options">Theme Options</a>
+                <ul>
+                    <li><a href="#header">Header</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#page">Page</a></li>
+                    <li><a href="#port-folio">Portfolio</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#sidebars">Sidebars</a></li>
+                    <li><a href="#appearance">Appearance</a></li>
+                    <li><a href="#other">Other</a></li>
+                    <li><a href="#updates">Updates</a></li>
+                </ul>
+            </li>
+            <li><a href="#import-demo-content">Import Demo Content</a>
+                <ul>
+                    <li><a href="#import-demo-slider">Import Slider Demo</a></li>
+                </ul>
+            </li>
+            <li><a href="#update">Update Theme</a></li>
+        </ul>
+        <div id="documenter_copyright">&copy; PhoenixTeam, 2014</div>
+    </div><!-- sidebar END -->
+    
+    <!-- content -->
+    <div id="documenter_content">
+
+
+
+        <!-- cover -->
+        <section id="documenter_cover">
+
+            <h1>Xenia - Refined WordPress Corporate Theme</h1>
+            <div id="documenter_buttons"></div>
+            <hr>
+            <p style="font-size:16px;">First of all a huge <b>thank you</b> for purchasing our WordPress Theme at Themeforest. If you have any questions, that are beyond the scope of this help file, please ask us a question on Themeforest. You can also follow us on Themeforest to keep track of all our updates and future items.<br/>Thanks so much!</p>
+            <hr>
+            <ul>
+                <li>Created: 5/10/2014</li>
+                <li>By: <a href="http://themeforest.net/user/PhoenixTeam" target="_blank">PhoenixTeam</a></li>
+                <li>E-mail: <a href="mailto:phoenix.team.themes@gmail.com">phoenix.team.themes@gmail.com</a></li>
+            </ul>
+
+        </section><!-- cover END -->
+
+
+
+
+        <!-- Getting started -->
+        <section id="started">
+
+            <div class="page-header">
+                <h1>How to Setup Xenia Theme</h1>
+                <hr class="notop">
+            </div>
+
+            <p>The installation and configuration of the theme consists of the following steps:</p>
+            
+            <ol>
+                <li><a href="#installation">Theme Installation</a></li>
+                <li><a href="#other-features">Creation of Content</a></li>
+                <li><a href="#theme_options">Setting Theme Options</a></li>
+            </ol>
+
+            <h4>General Theme Requirements</h4>
+            <ol>
+                <li>PHP v.5.3 or higher.</li>
+                <li>WordPress v.3.6 or higher.</li>
+            </ol>
+            
+            <h4>Required Plugins</h4>
+            <ol>
+                <li>WPBakery Visual Composer v.4.3 or higher (supplied with theme).</li>
+                <li>Revolution Slider v.4.5 or higher (supplied with theme).</li>
+            </ol>
+        
+
+            <h4>Recommended Plugins</h4>
+            <ol>
+                <li>Envato WordPress Toolkit v.1.7 or higher (supplied with theme).</li>
+            </ol>
+
+            <div>&nbsp;</div>
+
+            <div>&nbsp;</div>
+
+        </section><!-- Getting started END -->
+
+
+
+        <!-- Theme Installation -->
+        <section id="installation">
+
+            <div class="page-header">
+                <h1>Theme Installation</h1>
+                <hr class="notop">
+            </div>
+
+            <p>In order to proceed with the theme installation, you must be running WordPress 3.6 or higher and you should have PHP 5.3 or higher on your server.</p>
+
+            <div>&nbsp;</div>
+
+            <section id="installation-admin">
+
+                <div class="page-header">
+                    <h1>Theme Installation via WordPress Administration Area</h1>
+                    <hr class="notop">
+                </div>
+
+                <ol>
+                    <li>Go to Appearance → Themes.</li>
+                    <li>Click "Install Themes" and hit the "Upload" button</li>
+                    <li>Navigate to find the "xenia.zip" file on your computer and click "Install Now"</li>
+                    <li>Wait while the theme is uploaded and installed.</li>
+                    <li>Activate the newly installed theme. Go to Appearance → Themes and activate it.</li>
+                </ol>
+
+                <p><img src="assets/images/xenia-theme-active.png" alt="Xenia Theme now is Active" /></p>
+
+                <p>We strongly recommend you to install all required plugins after theme activation.<br/>
+                For more information about how to install plugins, related with Xenia theme, go to <a href="#plugins">"Plugins Related Content"</a> section.</p>
+
+                <div>&nbsp;</div>
+
+            </section>
+
+            <section id="installation-ftp">
+
+                <div class="page-header">
+                    <h1>Theme Installation via the FTP</h1>
+                    <hr class="notop">
+                </div>
+
+                <ol>
+                    <li>Log into your hosting space via the FTP software (For Ex: via the FileZilla).</li>
+                    <li>Unzip the Xenia.zip file and ONLY use the extracted Xenia theme folder.</li>
+                    <li>Upload the extracted Xenia theme folder into wp-content → themes folder.</li>
+                    <li>Activate the newly installed theme. Go to Appearance → Themes and activate it.</li>
+                </ol>
+
+                <div>&nbsp;</div>
+
+            </section>
+
+            <section id="installation-plugins">
+
+                <div class="page-header">
+                    <h1>Installation of a Theme Related Plugins</h1>
+                    <hr class="notop">
+                </div>
+
+                <p>Please follow the next steps to make the installation and activation of a plugins:</p>
+
+                <ol>
+                    <li>Click on "Begin installing plugins" link (screenshot below)</li>
+                    <p><img src="assets/images/theme-install-tgm-plugins.png" alt=""></p>
+                    <li>Do all steps, described on screenshot below</li>
+                    <p><img src="assets/images/theme-install-tgm-plugins-activate.png" alt=""></p>
+                    <li>Then all selected plugins will be installed &amp; activated.</li>
+                    <li>Finally you get result like this:</li>
+                    <p><img src="assets/images/theme-install-tgm-plugins-status.png" alt=""></p>
+                </ol>
+
+                <div>&nbsp;</div>
+
+            </section>
+
+        </section><!-- Theme Installation END -->
+
+
+
+        <section id="setup">
+
+            <div class="page-header">
+                <h1>Setup of the Xenia Theme</h1>
+                <hr class="notop">
+            </div>
+
+            <p>
+                Setup of the Xenia Theme is a complex process and you are need to do many different things to get it done.
+                <br>This chapter of documentation is designed to help you with this process, so let's go thru it step by step.
+            </p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+
+        <!-- Adding Pages -->
+        <section id="pages">
+
+            <div class="page-header">
+                <h1>Adding Pages</h1>
+                <hr class="notop">
+            </div>
+
+            <div>&nbsp;</div>
+
+            <p>Xenia Theme was designed to use with Visual Composer plugin (supplied with theme). All pages examples in this documentation will be assambled with Visual Composer (See <a href="#plugins">Plugins</a> chapter of this documentation for more detailes about required and recommended plugins).<br/>You are not forced to use this plugin, but we are strongly recommend you to use it.</p>
+
+            <div>&nbsp;</div>
+
+            <h4>Homepage</h4>
+
+            <p>To create Homepage and to set it as WordPress Front page, you should perform the following steps:</p>
+
+            Go to Pages → Add New.
+
+            <ol>
+                <li>Name it for example "Test Homepage".</li>
+                <li>In "Page Attributes" section set "Page with Visual Composer" template.</li>
+                <li>Click on "Backend Editor" button.</li>
+                <p><img src="assets/images/homepage-from-scratch.png" alt="Create Homepage"></p>
+                <li>Choose one of hompage layouts, for example "Corporate Hompage Layout".</li>
+                <p><img src="assets/images/hompage-vc-layout.png" alt="Set Hompage Layout"></p>
+                <p>Please note that we are got a layout template with dummy content. You should edit all sections of this layout and set a real content into it.</p>
+                <p>After doing so your page should look like that:</p>
+                <p><img src="assets/images/hompage-vc-layout-corporate.png" alt="Corporate Hompage Layout"></p>
+                <li>Click on "Publish" button after setting a real content.</li>
+            </ol>
+            
+            Then you should set this page as a WordPress Front page:
+            <ol>
+                <li>Go to Settings → Reading.</li>
+                <li>Choose "A static page" in "Front page displays" section.</li>
+                <li>Select your page as a "Front page"</li>
+                <li>Click on "Save Changes" button below.</li>
+                <p><img src="assets/images/setting_page_and_saving.png" alt="Setting Front page in WP Settings"></p>
+            </ol>
+
+            As the result you get something similar to a Xenia <a href="http://xenia.phoenix-theme.com/">Live Demo Preview</a>.
+
+            <div>&nbsp;</div>
+
+        </section><!-- Adding Pages END -->
+
+
+
+
+        <!-- menu -->
+        <section id="menu">
+
+            <div class="page-header">
+                <h1>Setting menus</h1>
+                <hr class="notop">
+            </div>
+
+            <p>Follow the next steps to define menus for each of the theme's menu locations. In each menu you can add as many items as you need.</p>
+            <p>We recommend you to start setting menus only after you create and setup all your pages, because they will apper in Edit Menu screen.</p>
+            <p>First of all, navigate to Appearance → Menus and click "Add Menu". Then give it a name and click "Create Menu" button.</p>
+            <p><img src="assets/images/menu-from-scratch-create.png" alt="Create Menu"></p>
+            <p>Then add some menu items and click "Save Menu" button.</p>
+            <p><img src="assets/images/menu-from-scratch-save.png" alt="Save Menu"></p>
+            <p>Finally click on "Manage Locations" tab (WP 3.6 or higher) and assign a Menu Location for your newly created menu by selecting it for the preferred Theme Location</p>
+            <p><img src="assets/images/menu-from-scratch-manage-locations.png" alt="Manage Locations"></p>
+            <p>Xenia theme supports two Theme Locations - "Main Navigation Menu" and "Footer Menu".</p>
+
+            <p>The result should look like this:</p>
+            <p><img src="assets/images/menu-from-scratch-result.png" alt="Manage Locations"></p>
+
+            <p>As you can see, Homepage Layouts are hidden. They are a second level menu, and they can be desplayed as drop-down on hover.</p>
+
+
+            <p>For more detailed information please visit WordPress Codex chapter <a href="http://codex.wordpress.org/Appearance_Menus_Screen">Appearance Menus Screen</a></p>
+
+        </section><!-- menu END -->
+
+
+
+        <!-- widgetised -->
+        <section id="widgetised">
+
+            <div class="page-header">
+                <h1>Setting Sidebars</h1>
+                <hr class="notop">
+            </div>
+
+            <p>By default Xenia Theme supports 4 <a href="http://codex.wordpress.org/Sidebars">sidebars</a> (widgets areas). They are:</p>
+<p>            <img src="assets/images/widgetized-areas.png" alt="Widgets Areas"></p>
+
+            <p>Blog Sidebar is used for blog pages by default and it should contain widgets, that are most useful for blog, like so:</p>
+            <p><img src="assets/images/widgetized-blog.png" alt="Create Menu"></p>
+
+            <p>And this is how it looks at the front-end of our website:</p>
+            <p><img src="assets/images/widgetized-blog-sidebar-frontend.png" alt="Blog Sidebar Front-end"></p>
+
+            <p>But if want to use different sidebar for blog page or you need more than one blog sidebar, - it's not a problem at all. You can create unlimited sidebars using Xenia Theme Sidebars Generator. To create a new sidebar you should perform a following steps:</p>
+
+            <ol>
+                <li>Go to Xenia Options → Sidebars</li>
+                <li>Enter the name of sidebar you want to create (for ex: "Dummy Sidebar")</li>
+                <li>Click on "Save Changes" button</li>
+            </ol>
+            <p><img src="assets/images/widgetized-generate-sidebar.png" alt="Generate Sidebar"></p>
+
+            <p>Now yor Dummy Sidebar is created, and if you go to Appearance → Widgets, you will see it.</p>
+
+            <p>If you want to generate another sidebar, simply click "Add Sidebar" button on Xenia Options → Sidebars, add new sidebar name and save changes.</p>
+            <p><img src="assets/images/widgetized-generate-another-sidebar.png" alt="Generate Another Sidebar"></p>
+
+            <p>And now it's time to go to Appearance → Widgets. As you can see, we've got two new sidebars, called "Dummy Sidebar" and "Another Sidebar". That's it! Now its time to put some demo content to our sidebas ang test them.</p>
+            <p><img src="assets/images/widgetized-generated-sidebars.png" alt="Generated Sidebars"></p>
+
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+
+            <p>You can use your newly created sidebars in a different ways:</p>
+
+            <p>You can go to Xenia Options → Blog and select one of our sidebars as a "Blog Sidebar Widgets Area",</p>
+            <p><img src="assets/images/widgetized-options-blog-sidebar.png"  alt="Theme Options Blog Sidebar"></p>
+            <p>and see the results (I put some content into our Dummy Sidebar, and now we can recognize it):</p>
+            <p><img src="assets/images/widgetized-dummy-sidebar-front.png"  alt="Dummy Sidebar at Front-end"></p>
+
+            <p>You can use any sidebar you want in any page, just select one at "Page Layout" section while you editing page, for example our Blog page. And we will select our "Another Sidebar":</p>
+            <p><img src="assets/images/widgetized-page-sidebar-layout.png"  alt="Sidebar at Page Layout section"></p>
+
+            <p>And we've got this result:</p>
+            <p><img src="assets/images/widgetized-page-sidebar-front.png"  alt="Sidebar at Page Layout section"></p>
+
+            <p>You can use any sidebar you want in any page, using Visual Composer "Widgetised Sidebar" shortcode.<br/>See how to use it in Visual Composer documentation (it also supplied with the theme and you can find it in "Documentation" folder in your Xenia_package_v.1.0.0.zip file.)</p>
+            <p><img src="assets/images/widgetized-vc-sidebar.png"  alt="Visual Composer Widgetised Sidebar Shortcode"></p>
+
+
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+
+            <p>Footer Sidebars are used for construct beautiful and informative website footer. By default there is 3 Footer Sidebars, but you can set fourth Footer Sidebar in Xenia Options → Footer → Footer Layout.</p>
+            <p><img src="assets/images/widgetized-footer-4cols.png" alt="Footer 4 cols"></p>
+
+        </section><!-- widgetised END -->
+
+
+
+
+        <!-- Post Formats -->
+        <section id="post-formats">
+
+            <div class="page-header">
+                <h1>Posts with Post Formats</h1>
+                <hr class="notop">
+            </div>
+
+            <p>Post Formats is a theme feature introduced with WordPress v.3.1. A Post Format is a piece of meta information that can be used by a theme to customize its presentation of a post.<br/>
+            Xenia Theme supports 7 post formats. They are:</p>
+
+            <p><img src="assets/images/post-formats.png" alt="Post Formats"></p>
+
+            <p>We have provide a handy user interface (UI) for them. Our Post Formats UI is self explanatory, it has previews and many examples of content, which can be easely used just by clicking it (will be useful especially for Audio and Video Post Formats).</p>
+
+            <p><img src="assets/images/pf-video-metabox.png" alt="Video Post Format UI Example"></p>
+
+            <p><img src="assets/images/pf-audio-example.png" alt="Video Post Format UI Example"></p>
+
+            <p>If you want to know more about WordPress Post Formats, you should visit this <a href="http://codex.wordpress.org/Post_Formats">WP Codex page</a></p>
+
+            <div>&nbsp;</div>
+        </section><!-- Post Formats END-->
+
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+
+            <div class="page-header">
+                <h1>Portfolio</h1>
+                <hr class="notop">
+            </div>
+
+            <p>Xenia Theme supports Portfolio Items which are a beautiful way to demonstrate your work to the public.</p>
+
+            <p><img src="assets/images/portfolio_frontend.png" alt="Portfolio frontend"></p>
+
+            <p>You can create as many Portfolio Items as you want and use them in a different ways.</p>
+
+            <ul>
+                <li>You can create a <a href="http://xenia.phoenix-theme.com/portfolio-3-columns/">Portfolio Page</a> using theme predefined page template</li>
+                <li>You can create a custom Portfolio Grid using Visual Composer (<a href="http://xenia.phoenix-theme.com/#homepage-portfolio-grid">like that</a>)</li>
+                <li>You can also show your customers <a href="http://xenia.phoenix-theme.com/port-folio/numbeez/">full summary</a> of your Portfolio project.</li>
+            </ul>
+
+            <p>Users of your site can see each item from the Portfolio Grid in fullwith by clicking the "Search" button and they also can reed short project summary by clicking the the "Attach" button (all these buttons appears on hover).</p>
+
+            <p><img src="assets/images/portfolio_frontend_detailed.png" alt="Portfolio frontend Detailed"></p>
+
+            <p>From short project summary users can also gets to a full Portfolio Item Page (it looks <a href="http://xenia.phoenix-theme.com/port-folio/numbeez/">like this</a>).</p>
+
+            <p>To create a Portfolio Item you should perform the following steps:</p>
+
+            <ol>
+                <li>Go to Portfolio → Add New.</li>
+                <li>Fill the "Add New Portfolio Item" form.
+                    <img src="assets/images/add_new_portfolio.png" alt="Add new Portfolio Item">
+                    <ul>
+                        <li>Click to "Set featured image" link in "Featured Image" section</li>
+                        <img src="assets/images/portfolio_ftr_img.png" alt="Set Featured Image">
+                        <li>Seclect featured image from WP Media Gallery Popup. This image will represent a whole project and it will be shown in portfolio grid and in a portfolio single page slider (as a first image). So you don't need to place this image into "Portfolio Gallery" section</li>
+                        <li>Click to "Set featured image" button at the bottom of WP Media Gallery Popup.</li>
+                        
+                        <p>After setting featured image lets select images for <a href="http://xenia.phoenix-theme.com/port-folio/numbeez/">portfolio item single page slider</a>:</p>
+
+                        <li>Click to "Select or Upload Images" button in "Portfolio Gallery" section.</li>
+                        <img src="assets/images/wp_media_gal.png" alt="WP Medai Gallery Button">
+                        <li>Choose some images (To select multiply images from media library use Ctrl/Cmd + click.) and hit "Select" button.</li>
+                        <img src="assets/images/media_gallery_popup.png" alt="WP Medai Gallery Popup">
+
+                    </ul>
+                </li>
+            </ol>
+            
+            <p>Once you have finished filling the form, do not forget to publish your Portfolio Item by clicking "Publish" button in "Publish" section.<br/>You can see an example of fully filled and published Portfolio Item on screenshot below.</p>
+
+            <p><img src="assets/images/filled_portfolio_item.png" alt="Filled Portfolio Item"></p>
+
+            <div>&nbsp;</div>
+
+        </section><!-- Portfolio END-->
+
+        <!-- TST -->
+        <section id="tst">
+
+            <div class="page-header">
+                <h1>Team, Services &amp; Testimonials</h1>
+                <hr class="notop">
+            </div>
+
+            <div>&nbsp;</div>
+
+            <p><img src="assets/images/tst-menu.png" alt="Other Custom Posts"></p>
+
+            <p>Team, Services &amp; Testimonials are designed to be used with Visual Composer Shortcodes.</p>
+
+
+            <div>&nbsp;</div>
+            <h4>Team</h4>
+
+            <p><strong>Team</strong> is the place where you can show the world how awesome you team is and who are them - your team members.</p>
+            <p><img src="assets/images/awesome-team.png" alt="Awesome Team Front-end"></p>
+            
+            <p>You can add as many Team Members, as you want and use them later in Visual Composer Shortcode.</p>
+            <p><img src="assets/images/team-member.png" alt="Add/Edit Team Member"></p>
+
+            <p>As you can see from the screenshot above, the process of creation of new Team Members is pretty obvious, but we're want you to pay attention to "Social Network" section.<br/>By default it looks something like this:</p>
+
+            <p><img src="assets/images/team-member-empty-socials.png" alt="Team Member Social Networks"></p>
+
+            <p>You can provide any Social Network you want from the long list of networks and do something similar to this:</p>
+
+            <p><img src="assets/images/team-member-socials.png" alt="Team Member Social Networks"></p>
+
+            <p>Please note that the number and order of these fields must match.</p>
+
+            <div>&nbsp;</div>        
+
+            <div>&nbsp;</div>
+            <h4>Services</h4>
+
+            <p><strong>Services</strong> are simply the beautiful and scalable icons with some text description.
+            They can be used in Visual Composer with two layouts:</p>
+
+            <ol>
+                <li>Boxes</li>
+                <img src="assets/images/services-front-cols.png" alt="Services Front-end Boxes">
+                <li>Lists</li>
+                <img src="assets/images/services-front-lists.png" alt="Services Front-end Lists">
+            </ol>
+            
+            <p>As you can see from the screenshot below, creation/edition of Service Item is super simple.<br/>Just write some text and select the Service Icon.<br/>And don't forget to save/update :)</p>
+            <p><img src="assets/images/services-backend.png" alt="Services Back-end"></p>
+            
+            <div>&nbsp;</div>
+
+            <div>&nbsp;</div>
+            <h4>Testimonials</h4>
+
+            <p><strong>Testimonails</strong> is the best thing to show a real feedback from your customers to the world.</p>
+            <p>Testimonials can be used in Visual Composer with two layouts:</p>
+            
+            <ol>
+                <li>Boxed</li>
+                <img src="assets/images/testimonials-front.png" alt="Testimonials Front-end">
+                <li>Fullwidth</li>
+                <img src="assets/images/testimonials-front-full.png" alt="Testimonials Front-end Full">
+            </ol>
+
+            <p>As you can see from the screenshot below, the process of creation/edition of Testimonial is also pretty clean, you just need to deal with six fields, including rating.
+            <p><img src="assets/images/testimonials-backend.png" alt="Testimonials Back-end"></p>
+
+        </section><!-- tst END -->
+
+
+        <!-- Plugins -->
+        <section id="plugins">
+
+            <div class="page-header">
+                <h1>Plugins Related Content</h1>
+                <hr class="notop">
+            </div>
+
+            <p>First of all, you should have all required plugins installed &amp; activated on your website. For more information please see a <a href="#installation-plugins">Plugins Installation</a> chapter of this documentation &amp;</p>
+            <p>Now you have all required plugins, and its time to create content, related to them.</p>
+
+            <div>&nbsp;</div>
+            <h4>Visual Composer</h4>
+
+            <p>WPBakery Visual Composer is #1 best selling page builder plugin for WordPress. It allows you to build complex, content rich pages in just minutes. No programming knowledge required. With it you can forget about default WordPress [shortcodes].</p>
+            <p>Visual Composer allows you to build unique page layouts and fill them via the visual popup forms.</p>
+
+            <p>We provide you a short example of how to use Visual Composer and we'll be focused more on our exclusive theme features. For more comprehansive description of Visual Composer functionality, please see its documentation (supply with the theme).</p>
+
+            <p>Xenia theme support an eleven exclusive Visual Composer shortcodes. We provide to you an examle of how to use it, and it is the "Promo Title" shortcode.<br/>If you want to see it in action, you should perform the following steps:</p>
+            <ol>
+                <li>Go to Page → Add New → Backend Editor → Add Element</li>
+                <p><img src="assets/images/vc-add-new-el.png" alt=""></p>
+                <li>Click on "Xenia Exclusive" link</li>
+                <p><img src="assets/images/vc-xenia-exclusive.png" alt=""></p>
+                <li>Coose a "Promo Title" shortcode</li>
+                <li>Fill all form elements of "Promo Title" pop-up &amp; click "Save Changes" button</li>
+                <p><img src="assets/images/vc-xenia-promo-title-opts.png" alt=""></p>
+            </ol>
+
+            <p>After it you should have something like this on your back-end:</p>
+            <p><img src="assets/images/vc-xenia-promo-title-backend-view.png" alt=""></p>
+
+            <p>Now you sould save changes and check the front-end of your page. And it should look like this:</p>
+            <p><img src="assets/images/vc-xenia-promo-title-frontend-view.png" alt=""></p>
+
+            <p>This is a common way of use of Visual Composer. For more comprehansive description of Visual Composer functionality, please see its documentation (supply with the theme).</p>
+
+            <div>&nbsp;</div>
+            <h4>Revolution Slider</h4>
+
+            <p>Slider Revolution is an all-purpose slide displaying solution that allows for showing almost any kind of content with highly customizable, transitions, effects and custom animations. Due to its visual oriented interface and countless options, Slider Revolution is suited for beginners and pro’s alike.</p>
+
+            <p>In this short hint we will show you how to create slider using "Slider Revolution" plugin. For more comprehansive description of Slider Revolution functionality, please see its documentation (supply with the theme).</p>
+
+            <p>Plaese note that you sould have "Slider Revolution" plugin installed &amp; activated on your website.</p>
+            <p>So let's start to build our slider:</p>
+
+            <ol>
+                <li>Go to Revolution Slider → Create New Slider</li>
+                <p><img src="assets/images/revslider-create-slider.png" alt=""></p>
+                <li>Fill all form fields like on screenshot below:</li>
+                <p><img src="assets/images/revslider-click-to-save-slider.png" alt=""></p>
+                <li>Save your slider</li>
+                <li>revslider-set-slide-opts.png</li>
+                <li>Click "Edit Slides" button, then click on "New Slide" and select slide image</li>
+                <p><img src="assets/images/revslider-slider-created.png" alt=""></p>
+                <li>Click "Edit Slide" button to set slide options:</li>
+                <p><img src="assets/images/revslider-set-slide-opts.png" alt=""></p>
+                <li>Fill all form elements liker this:</li>
+                <p><img src="assets/images/revslider-edit1.png" alt=""></p>
+                <li>Click on "Add Layer" button (you can add as many layers as you want)</li>
+                <p><img src="assets/images/revslider-edit2.png" alt=""></p>
+                <li>Set Layers Timings &amp; sort them</li>
+                <p><img src="assets/images/revslider-edit3.png" alt=""></p>
+                <p>Click "Update Slide"</p>
+                <li>Repeat steps, described above untill you have three slides, just like on our <a href="http://xenia.phoenix-theme.com">demo</a></li>
+
+                <p>At the Back-end of your website it should looks like this:</p>
+                <p><img src="assets/images/revslider-edit4.png" alt=""></p>
+                <p>And at the Front-end it will be look like this:</p>
+                <p><img src="assets/images/revslider-frontend-result.png" alt=""></p>
+            </ol>
+
+        </section><!-- Plugins END -->
+
+        <!-- Theme options -->
+        <section id="theme_options">
+
+            <div class="page-header">
+                <h1>Xenia Theme Options</h1>
+                <hr class="notop">
+            </div>
+
+            <p>Xenia Theme Options Panel helps you easily take control over your site, by allowing you to upload your logo and favicon, style the appearance of the theme with your custom colors, change fonts, turn features on and off, paste custom CSS and JS code, paste Google Analytcs code and much more without having to write any code.</p>
+            <p>By default Xenia Theme Options is set exactly as on a Live Demo</p>
+
+            <p>To access the Theme Options panel, navigate to Xenia Options.</p>
+
+            <p><img src="assets/images/options.png" alt="" /></p>
+
+            <p>Xenia Theme Options are divided into ten sections. They are:</p>
+
+            <ol>
+                <li><a href="#header">Header</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#page">Page</a></li>
+                <li><a href="#port-folio">Portfolio</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a href="#social">Social</a></li>
+                <li><a href="#sidebars">Sidebars</a></li>
+                <li><a href="#appearance">Appearance</a></li>
+                <li><a href="#other">Other</a></li>
+                <li><a href="#updates">Updates</a></li>
+            </ol>
+
+            <p>Let's speak about each section in more details.</p>
+
+        </section><!-- Theme options END -->
+
+
+        <section id="header">
+
+            <div class="page-header">
+                <h1>Header</h1>
+                <hr class="notop">
+            </div>
+
+            <p>Header section provides you the ability to change logo (including logo for the retina displays), choose what type of main menu to use (sticky or not) and the ability to display your contact information.</p>
+
+            <p>Top Contacts Back-end:</p>
+            <p><img src="assets/images/header-top-contacts-back.png" alt="" /></p>
+            
+            <p>And its Front-end:</p>
+            <p><img src="assets/images/header-top-contacts-front.png" alt="" /></p>
+
+        <div>&nbsp;</div>
+
+        </section><!-- Head END -->
+
+        <section id="blog">
+
+            <div class="page-header">
+                <h1>Blog</h1>
+                <hr class="notop">
+            </div>
+
+            <p>In the "Blog" section we've place all options, that are associated with configuration of blog pages and posts. In this section you can change blog layout, sidebar position, choose what sidebar will be used for blog pages by default. Also you can turn social share button block for blog posts &amp; choose what social share buttons will be used.</p>
+
+            <p><img src="assets/images/xo-blog-section.png" alt="" /></p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+        <section id="page">
+
+            <div class="page-header">
+                <h1>Page</h1>
+                <hr class="notop">
+            </div>
+
+            <p>In the "Page" section we have only few options, because in our theme creation of pages relies on a Visual Composer plugin.</p>
+
+            <p><img src="assets/images/xo-page-section.png" alt="" /></p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+        <section id="port-folio">
+
+            <div class="page-header">
+                <h1>Portfolio</h1>
+                <hr class="notop">
+            </div>
+
+            <p>In the "Portfolio" section we have options for configuring all things, that are related with Portfolio pages.</p>
+
+            <p><img src="assets/images/xo-portfolio-section.png" alt="" /></p>
+            
+            <ul>
+                <li>Portfolio Page Layout has 4 variants: <a href="http://xenia.phoenix-theme.com/portfolio-2-columns/">2 Columns</a>, <a href="http://xenia.phoenix-theme.com/portfolio-3-columns/">3 Columns</a>, <a href="http://xenia.phoenix-theme.com/portfolio-4-columns/">4 Columns</a> and <a href="http://xenia.phoenix-theme.com/portfolio-full-width/">Fullwidth</a>.</li>
+                <li>Portfolio items quantity is setting how many portfolio items will be shown on portfolio pages, and the default value for it is 9.</li>
+                <li>Portfolio Single Items Layout is used to change the layout of portfolio single item pages. There's two layouts: <a href="http://xenia.phoenix-theme.com/portfolio-detail-half/">"Half"</a> and <a href="http://xenia.phoenix-theme.com/portfolio-detail-wide/">"Wide"</a>.</li>
+                <li>Related items quantity sets how many portfolio items will be shown on the single item page. By default it is set to 6.</li>
+            </ul>
+
+
+            <div>&nbsp;</div>
+
+        </section>
+
+        <section id="footer">
+
+            <div class="page-header">
+                <h1>Footer</h1>
+                <hr class="notop">
+            </div>
+
+            <p>In the "Footer" section we have ability to set number of columns in a website footer (3 or 4). All content of the footer columns can be added in Appearance → Widgets in appropriate widgets area. We can also change copyright text.</p>
+
+            <p><img src="assets/images/xo-footer-section.png" alt="" /></p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+
+        <section id="social">
+
+            <div class="page-header">
+                <h1>Social</h1>
+                <hr class="notop">
+            </div>
+
+            <p>In the "Social" section you can set RSS feed URL and define links of yuor company social profiles. </p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+        <section id="sidebars">
+
+            <div class="page-header">
+                <h1>Sidebars</h1>
+                <hr class="notop">
+            </div>
+
+            <p>In the "Sidebars" section you can generate as many sidebars as you want. Read detailed instruction about how to generate sidebars <a href="#widgetised">here</a>.</p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+        <section id="appearance">
+
+            <div class="page-header">
+                <h1>Appearance</h1>
+                <hr class="notop">
+            </div>
+
+            <p>In the "Appearance" section you can set layout style, theme adn footer colors (you can play with this features in real time on our <a href="http://xenia.phoenix-theme.com/">Live Demo</a> for a better understanding). Also you can upload and set you custom favicon &amp; other icons here.</p>
+
+            <p><img src="assets/images/xo-appearance-section.png" alt="" /></p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+        <section id="other">
+
+            <div class="page-header">
+                <h1>Other</h1>
+                <hr class="notop">
+            </div>
+
+            <p>Here you can set e-mails for the Contact Form Widget, paste Google Analytics Property ID to receive statistics, define your custom CSS rules and even wright your own JavaScript for your website.</p>
+            <p><img src="assets/images/xo-other-settings.png" alt="" /></p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+        <section id="updates">
+
+            <div class="page-header">
+                <h1>Updates</h1>
+                <hr class="notop">
+            </div>
+
+            <p>This section indicates your updates status.</p>
+            <p>If alert message say that your Envato Keys is not set:</p>
+            <p><img src="assets/images/xo-updates-section-not.png" alt="" /></p>
+
+
+            <ul>
+                <li>Go to <a href="#update">Update Theme</a> chapter of this documentation</li>
+                <li>Do all steps, describded there.</li>
+            </ul>
+            
+            <p>After it you should have a green message like on screenchot below, and you can be sure you'll get theme updates.</p>
+            <p><img src="assets/images/xo-updates-section-ok.png" alt="" /></p>
+
+            <div>&nbsp;</div>
+
+        </section>
+
+
+        <section id="import-demo-content">
+
+            <div class="page-header">
+                <h1>Import Demo content</h1>
+            <hr class="notop">
+            </div>
+
+            <p>I recommend you to use the demo content files to build a new website which doesn`t have content yet. Our theme includes .xml data files which will allow you to upload the demo content to your website. Demo content is the same as in the <a href="http://xenia.phoenix-theme.com">Live Demo</a> Preview.</p>
+
+            <ol>
+                <li>Find "Demo Content" folder in downloaded package from Themeforest</li>
+                <li>Find the demo.xml file </li>1
+                <li>Login into WordPress</li>
+                <li>Go to Tools > Import</li>
+                <li>Click on "WordPress" If you don't have it already, install the plugin</li>
+                <li>Click to select file </li>
+                <li>Choose our demo.xml file</li>
+            </ol>
+
+            <p><img src="assets/images/doc_import_xml.png" alt="" /></p>
+            <p>NOTICE: Don`t forget to check the "Download and Import File Attachments" in order to import images too.</p>
+            
+
+            <section id="import-demo-slider">
+                <div class="page-header">
+                <h1>Setting for Slider</h1>
+                <hr class="notop">
+                <p>After installing the Revolution slider, go to Revolution Slider > Import Slider > add select our demo content for slider (slider.zip in Demo folder)</p>
+                </div>
+                <p><img src="assets/images/build_2.png" alt="" /></p>
+            </section>
+
+        </section>
+
+
+        <!-- Update theme -->
+        <section id="update">
+
+            <div class="page-header">
+                <h1>How to Update the Theme</h1>
+                <hr class="notop">
+            </div>
+
+            <p>You can update your theme via the FTP or via WordPress. See the information below for each method. If you choose to update your theme via the FTP, you first need to download the new theme files from Themeforest.</p>
+
+            <div>&nbsp;</div>
+
+            <h4>How to Update Your Theme via WordPress (easy way)</h4>
+
+            <p>Important: You should have "Envato Wordpress Toolkit" plugin installed and activated on your WordPress site. This plugin is supplied with our theme and it can be installed automatically.
+
+            <p>Go to Xenia Options → Update and set up your Envato Marketplace Username and the API Key.</p>
+            <p><img src="assets/images/doc_update.png" alt="" /></p>
+
+            <p>You can find an API Key at <a href="http://themeforest.net">http://themeforest.net</a> in "Settings" section.</p>
+            <p><img src="assets/images/find-api-key-settings.png" alt="" /></p>
+            <p><img src="assets/images/here-it-is-api-key.png" alt="" /></p>
+
+            <div>&nbsp;</div>
+
+            <h4>How to Update Your Theme via the FTP</h4>
+
+            <ol>
+                <li>Go to wp-content → themes location and backup your Xenia theme folder by saving it to your computer, or you can choose to simply delete it. Your content will not be lost.</li>
+                <li>Retrieve the "xenia.zip" file from your new Themeforest download (only theme file) and extract the file to get the Xenia theme folder.</li>
+                <li>Then simply drag and drop the new Xenia theme folder into wp-content → themes location. Choose to Replace the current one if you didn't delete it.</li>
+            </ol>
+
+            <div>&nbsp;</div>
+        </section><!-- Update theme END -->
+
+
+
+    </div><!-- content END -->
+</body>
+</html>
